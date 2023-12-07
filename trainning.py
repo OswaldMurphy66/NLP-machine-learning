@@ -50,9 +50,7 @@ for sheet_name in df_testing:
 
 
 print(test_sentence)
-
-# load train_sentence and train_label to pytorch for trainning
-
+ 
 
 # Assuming train_sentence and train_label are your data
 
@@ -179,5 +177,4 @@ val_dataloader = DataLoader(val_dataset, batch_size=32, shuffle=False)
 accuracy, precision, recall, f1 = evaluate(model, val_dataloader)
 print(f"Validation Accuracy: {accuracy}")
 print(f"Precision: {precision}, Recall: {recall}, F1 Score: {f1}")
-
-
+ 
